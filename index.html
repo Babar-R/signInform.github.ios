@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ca043f5c62.js" crossorigin="anonymous"></script>
+    <Script src="/index.js"></Script>
+</head>
+<style>
+    .container{
+        display: flex;
+        text-align: center;
+        
+    }
+    .box1{
+        width: 400px;
+        height: 470px;
+        margin-left: 150px;
+        background-image:linear-gradient(to bottom, rgba(6, 6, 7, 0.8), rgb(10, 9, 10,0)), url(https://e0.pxfuel.com/wallpapers/269/892/desktop-wallpaper-motion-dark-green-triangles-shapes-abstract-geometric-background-elegant-and-luxury-dynamic-style-for-business-and-corporate-template-motion-background.jpg);
+        box-shadow: 0px 0px 20px;
+        border: none;
+        
+        
+    }
+    .box2{
+        width: 400px;
+        height: 470px ;
+        box-shadow: 0px 0px 20px;
+        border: none;
+        
+
+        }
+        h1{
+            margin-top: 100px;
+        }
+        .H2{
+            margin-top: 50px;
+        }
+        input{
+            border-radius: 50px;
+            border-color: rgba(0, 0, 0, 0.452);
+        }
+        .hide_btn{
+            display: none;
+        }
+        #login_btn2{
+            display: none;
+        }
+        
+</style>
+<body>
+    <center>
+    <div class="container m-5">
+
+        <div  class="box1 class border border-dark mt-4 ">
+            
+            <h1 class="fw-bold text-decoration-underline text-light" id="signup hd">SIGN UP </h1>
+              
+            <h2 class="H2 fw-bold font-monospace text-light" id="chng">Start your journey</h2>
+            <h3 class="fw-bold font-monospace text-light" id="chng2">today</h3>
+            <button onclick="logIn()" id="LogIn_btn" class="btn btn-primary m-4">LOGIN</button>
+            <button onclick="signUp()" id="SignUp_btn" class=" hide_btn btn btn-primary m-4">SIGN UP</button>
+
+
+        </div>
+        <div id="b2" class="box2 class border border-dark mt-4">
+            <form class="form_page" action=""></form>
+            <input id="user_name" class="m-2 mt-5" type="text" placeholder="Name" required>
+            <input id="user_Lname" class="m-2"type="text" placeholder="Last Name" required>
+            <input id="user_age" class="m-2"type="number" placeholder="Age" required>
+            <input id="user_email" class="m-2"type="email" placeholder="Email" required>
+            <input id="user_pwd"  type="password" placeholder="Password" required style="margin: 8px; margin-left: 30px;">
+
+            <i id="pwd_visibility" onclick="pwd_visible()" class="fa-regular fa-eye" style="cursor: pointer;"></i>
+            <i id="pwd2_visibility" onclick="pwd2_visible()" class="fa-regular fa-eye-slash" style="display: none; "></i>
+
+            <input id="user_repwd" class="m-2"type="password" placeholder="Re-Enter Password" required>
+            <p id="empty_error" class="text-danger"></p>
+             </form>
+            <br>
+            <button onclick="signup_submit()" id="submit_btn" class="btn btn-primary ">SUBMIT</button>
+            <button onclick="login_submit()" id="login_btn2" class="btn btn-primary " >LOGIN</button>
+            <button onclick="clr()" id="clear_btn" class="btn btn-danger">CLEAR</button>
+            
+            
+        </div>
+    </center>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+    
+    
+</body>
+</html>
